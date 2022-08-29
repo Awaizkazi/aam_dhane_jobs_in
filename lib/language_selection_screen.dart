@@ -13,134 +13,136 @@ class LnaguageSelectionScreen extends StatefulWidget {
 class _LnaguageSelectionScreenState extends State<LnaguageSelectionScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 9, 56, 10),
-        centerTitle: true,
-      ),
-      body: SafeArea(
-        child: Column(
-          children: [
-            SizedBox(
-              height: 50,
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                top: 1,
-                left: 50,
-                right: 40,
-                bottom: 70,
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Color.fromARGB(255, 9, 56, 10),
+          centerTitle: true,
+        ),
+        body: SafeArea(
+          child: Column(
+            children: [
+              SizedBox(
+                height: 50,
               ),
-              child: Text(
-                'Choose Your preferred Language',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
+              Padding(
+                padding: const EdgeInsets.only(
+                  top: 1,
+                  left: 50,
+                  right: 40,
+                  bottom: 70,
                 ),
-              ),
-            ),
-            Image.asset('assets/splash_screen.png'),
-            SizedBox(
-              height: 30,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                SizedBox(
-                  height: 130,
-                  width: 100,
-                  child: NueBox(
-                    child: Text(
-                      'English',
-                      style: TextStyle(fontSize: 15),
-                      textAlign: TextAlign.center,
-                    ),
+                child: Text(
+                  'Choose Your preferred Language',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
                   ),
-                ),
-                SizedBox(
-                  height: 130,
-                  width: 100,
-                  child: NueBox(
-                    child: Text(
-                      'English',
-                      style: TextStyle(fontSize: 15),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 130,
-                  width: 100,
-                  child: NueBox(
-                    child: Text(
-                      'English',
-                      style: TextStyle(fontSize: 15),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(
-              height: 40,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                SizedBox(
-                  height: 130,
-                  width: 100,
-                  child: NueBox(
-                    child: Text(
-                      'हिन्दी',
-                      style: TextStyle(fontSize: 15),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 130,
-                  width: 100,
-                  child: NueBox(
-                    child: Text(
-                      'हिन्दी',
-                      style: TextStyle(fontSize: 15),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 130,
-                  width: 100,
-                  child: NueBox(
-                    child: Text(
-                      'हिन्दी',
-                      style: TextStyle(fontSize: 15),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(
-              height: 8,
-            ),
-            ElevatedButton(
-              onPressed: () {},
-              child: Text(
-                'Next',
-                style: TextStyle(
-                  fontSize: 20,
                 ),
               ),
-              style: ElevatedButton.styleFrom(
-                  minimumSize: Size(350, 50),
-                  primary: Colors.green.shade600,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  )),
-            ),
-          ],
+              Image.asset('assets/splash_screen.png'),
+              SizedBox(
+                height: 30,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  SizedBox(
+                    height: 130,
+                    width: 100,
+                    child: NueBox(
+                      child: Text(
+                        'English',
+                        style: TextStyle(fontSize: 15),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 130,
+                    width: 100,
+                    child: NueBox(
+                      child: Text(
+                        'English',
+                        style: TextStyle(fontSize: 15),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 130,
+                    width: 100,
+                    child: NueBox(
+                      child: Text(
+                        'English',
+                        style: TextStyle(fontSize: 15),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 40,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  SizedBox(
+                    height: 130,
+                    width: 100,
+                    child: NueBox(
+                      child: Text(
+                        'हिन्दी',
+                        style: TextStyle(fontSize: 15),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 130,
+                    width: 100,
+                    child: NueBox(
+                      child: Text(
+                        'हिन्दी',
+                        style: TextStyle(fontSize: 15),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 130,
+                    width: 100,
+                    child: NueBox(
+                      child: Text(
+                        'हिन्दी',
+                        style: TextStyle(fontSize: 15),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 8,
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text(
+                  'Next',
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
+                ),
+                style: ElevatedButton.styleFrom(
+                    minimumSize: Size(350, 50),
+                    primary: Colors.green.shade600,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    )),
+              ),
+            ],
+          ),
         ),
       ),
     );

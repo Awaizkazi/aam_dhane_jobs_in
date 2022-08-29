@@ -48,12 +48,6 @@ class _SplashScreenState extends State<SplashScreen> {
             SizedBox(
               height: 50,
             ),
-            // ElevatedButton(
-            //   onPressed: () {},
-            //   child: Icon(
-            //     Icons.forward,
-            //   ),
-            // ),
           ],
         ),
       ),
