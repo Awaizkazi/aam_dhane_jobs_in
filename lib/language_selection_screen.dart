@@ -1,16 +1,17 @@
 // ignore_for_file: unnecessary_const, prefer_const_constructors, prefer_const_literals_to_create_immutables
 import 'package:aam_dhane_jobs_in/neu_box.dart';
+import 'package:aam_dhane_jobs_in/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
-class LnaguageSelectionScreen extends StatefulWidget {
-  const LnaguageSelectionScreen({Key? key}) : super(key: key);
+class LanguageSelectionScreen extends StatefulWidget {
+  const LanguageSelectionScreen({Key? key}) : super(key: key);
 
   @override
-  State<LnaguageSelectionScreen> createState() =>
-      _LnaguageSelectionScreenState();
+  State<LanguageSelectionScreen> createState() =>
+      _LanguageSelectionScreenState();
 }
 
-class _LnaguageSelectionScreenState extends State<LnaguageSelectionScreen> {
+class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -126,7 +127,14 @@ class _LnaguageSelectionScreenState extends State<LnaguageSelectionScreen> {
                 height: 8,
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => WelcomeScreen(),
+                    ),
+                  );
+                },
                 child: Text(
                   'Next',
                   style: TextStyle(
@@ -134,11 +142,12 @@ class _LnaguageSelectionScreenState extends State<LnaguageSelectionScreen> {
                   ),
                 ),
                 style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
-                    primary: Colors.green.shade600,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    )),
+                  minimumSize: Size(350, 50),
+                  primary: Colors.green.shade600,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
               ),
             ],
           ),
