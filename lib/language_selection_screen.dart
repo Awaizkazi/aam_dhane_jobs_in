@@ -17,7 +17,6 @@ class _LnaguageSelectionScreenState extends State<LnaguageSelectionScreen> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Color.fromARGB(255, 9, 56, 10),
-          centerTitle: true,
         ),
         body: SafeArea(
           child: Column(
